@@ -1,7 +1,7 @@
 
-# Employee Review System
+# Polling API System
 
-This is an application that allows employees to submit feedback toward each other’s performance.
+This is a server application in Node.js and a Database of your choice Only the API needs to be designed
 
 ## Steps to start the project
 
@@ -18,40 +18,25 @@ This is an application that allows employees to submit feedback toward each othe
 ## Folder Structure
 
 ```bash
-Employee Review System
-    |
-    |               |--->css
-    |--->assets---->|--->images
-    |             
-    |
-    |               |--->flashMiddleware.js
+polling-api-system
+                          
     |--->config---->|--->mongoose.js
-    |               |--->passport-local-Stradegy.js
+    |            
     |
-    |                  |-->admin_controller.js
-    |--->controllers-->|-->home_controller.js
-    |                  |-->review_controller.js
-    |                  |-->user_controller.js
+    |                  |-->OptionsController.js
+    |--->controllers-->|-->QuestionsController.js
+    |                 
     |
-    |               |-->review.js
+    |               |-->options.js
     |--->models---->|
-    |               |-->user.js
+    |               |-->questions.js
     |
     |              
-    |               |-->admin.js
+    |               |-->api|--->v1---------->|-->index.js
+    |               |      |-->index.js      |-->options.js
+    |              |                        |-->questions.js
     |--->routes---->|-->index.js
-    |               |-->review.js
-    |               |-->user.js
-    |
-    |              |--->_header.ejs
-    |              |---> addEmployee.ejs
-    |              |---> admin.ejs
-    |              |---> employe.ejs
-    |--->views---->|--->forget_password.ejs
-    |              |--->home.ejs
-    |              |--->layout.ejs
-    |              |--->sign_in.ejs
-    |              |--->sign_up.ejs
+    |              
     |
     |-->node_modules
     |-->.gitignore
